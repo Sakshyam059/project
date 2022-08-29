@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="" style="background: #f2f2f2;">
+    
+    <!--navbar-->
+    <nav class="bg-white h-12 lg:h-auto fixed top-0 left-0 right-0 z-10" id="navbar">
+        <a class="absolute top-3 left-4 text-lg lg:hidden" onclick="showMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <a class="hidden absolute top-3 right-4 text-lg lg:hidden" id="cancel" onclick="hideMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <div class="flex justify-center lg:justify-between mx-3 lg:mx-32">
+            
+            <a class="uppercase tracking-wider mt-3 lg:mt-8 lg:mb-4 text-lg lg:text-xl" href="index.html">Sakshyam</a>
+          
+  
+          <div class=" mt-8 mb-4  hidden animate__animated  lg:block" id="menu">
+            <ul class=" lg:flex absolute lg:static left-0 mt-4 lg:mt-0 w-screen lg:w-auto bg-white text-center animate__animated animate__slideInDown" id="menu-items">
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="index.html" class="">Home</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#feature" class="">Features</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#service" class="">Services</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#pricing" class="">Pricing</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#about" class="">About</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#contact" class="">Contact</a></li>
+              <li class="lg:pl-4 py-3 lg:py-0 animate__animated hover:text-red-500 "><a href="#" class="" onclick="showForm()">Account</a></li>
+
+              
+          
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--navbar-->
+
+    <!--form-->
+    <div class="hidden fixed  top-12 lg:top-16  h-screen w-full bg-gray-200  bg-opacity-70 backdrop-filter backdrop-blur-md z-10 " id="formmain">
+        <div class="mt-10 rounded-lg w-auto lg:w-1/4 mx-3 lg:mx-auto h-auto bg-white animate__animated animate__fadeIn" id="form">
+            <div class="bg-blue-400 h-full w-full  rounded-lg lg:rounded-r-lg">
+                <form action="" class="h-full w-full bg-white rounded-lg lg:rounded-r-lg">
+                    <h1 class="text-center text-2xl lg:text-3xl font-bold pt-4">Log In</h1>
+                    <h2 class="text-center pt-8 lg:pt-14 font-semibold">Welcome to Sakshyam</h2>
+                    <div class="mx-4 mt-8">
+                        <label for="" class="text-sm">Username or Email</label>
+                        <input type="text" class="block border-b w-full  mb-2 h-6 pl-1 outline-none">
+                        <label for="" class="text-sm">Password</label>
+                        <input type="password" class="block border-b w-full  h-6 pl-1 outline-none">
+                        <h2 class="text-xs text-right mr-4 mt-2"><a href="" class="text-blue-600">Forgot Password?</a></h2>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="bg-blue-600 px-8 py-2 mx-auto rounded-lg text-white transition-all ease-in-out hover:bg-yellow-400 hover:text-black">Log In</button>
+                    </div>
+
+                    <p class="text-center mt-4 text-xs text-gray-400">OR</p>
+                    <div class="mt-4 text-center text-xs">
+                        <button class="border rounded-lg pt-1 pb-2  px-4 transition-all ease-in-out hover:bg-gray-100"><img src="https://img.icons8.com/color/48/000000/google-logo.png" class="relative top-1 inline-block w-4 "/><span class=" pl-1 ">Sign in with Google</span></button>
+                    </div>
+
+                    <p class="text-xs text-center py-3 pb-6 lg:py-6">New to us? <a href="#" class="text-blue-600">Create an Account</a></p>
+                    
+                    <div class="absolute  top-12 right-6  lg:left-1/2 lg:ml-36 text-lg">
+                      <a href="#" onclick="hideForm()"> <i class="fa-solid fa-xmark"></i></a> 
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        </div>
+    <!--form-->
+
+    <!--Container-->
+      <div class="bg-blue-200 h-screen bg-center bg-cover text-center " style="background-image: url('images/bg_1.jpg');">
+       
+            <svg class="absolute bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="100 120 1024 140"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+       
+            <h1 class="pt-36 lg:pt-52 pb-6 text-4xl mx-3 lg:mx-0 lg:text-6xl  font-bold">Welcome to New World</h1>
+            <p class="pb-6 mx-3 lg:mx-96 text-base lg:text-lg ">A 2022 project of HTML, CSS and Javascript submitted by Sakshyam, Roshan and Anil.</p>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>
+      </div>
+    <!--Container-->
+
+    <!--Feature-->
+    <div class="h-auto mx-3 lg:mx-32 text-center" style="background: #f2f2f2;" id="feature">
+        <h1 class="uppercase text-2xl lg:text-4xl pt-20">Our Awesome Features</h1>
+        <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-10 text-sm lg:text-lg text-gray-600">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
+        <div class=" grid gap-8 lg:grid-cols-3 ">
+            <div class="bg-white rounded-lg shadow-lg  h-110">
+               
+                <div class="h-2/6 mx-12">
+                <i class="fa-solid fa-thumbs-up  text-8xl mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    <h1 class="mt-4 font-medium text-xl">Fast Loading</h1>
+                <p class="my-6 lg:my-8 text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+            <div class="bg-white rounded-lg shadow-lg h-110">
+
+                <div class=" h-2/6 mx-12">
+                    
+                    <i class="fa-solid fa-bolt-lightning text-8xl  mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    <h1 class="mt-4 font-medium text-xl">Fast Loading</h1>
+                <p class="my-6 lg:my-8 text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md  text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+            <div class="bg-white rounded-lg shadow-lg h-110">
+
+                <div class="h-2/6 mx-12">
+                    
+                <i class="fa-solid fa-user  text-8xl mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    <h1 class="mt-4 font-medium text-xl">Developer</h1>
+                <p class="my-6 lg:my-8 text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg h-110">
+
+                <div class="h-2/6 mx-12">
+                <i class="fa-solid fa-code  text-8xl mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    <h1 class="mt-4 font-medium text-xl">Clean Code</h1>
+                <p class="my-6 lg:my-8 text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg h-110">
+
+                <div class="h-2/6 mx-12">
+                    
+                <i class="fa-solid fa-magnifying-glass  text-8xl mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    
+                    <h1 class="mt-4 font-medium text-xl">Search Engine</h1>
+                <p class="my-6 lg:my-8 text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg h-110">
+
+                <div class="h-2/6 mx-12">
+                <i class="fa-solid fa-mobile-screen  text-8xl mt-6 text-gray-500"></i>
+                </div>
+
+                <div class="mx-12">
+                    <h1 class="mt-4 font-medium text-xl">Fully Responsive</h1>
+                <p class="my-6 lg:my-8 font-medium text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
+                </div>
+
+                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn more</button>
+                
+            </div>
+
+        </div>
+      
+    </div>
+
+    <!--Feature-->
+
+    <!--svg-->
+    <div class="h-auto ">
+       <div>
+        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#fff" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+       </div>
+       
+    </div>
+    <!--svg-->
+
+    <!--Services-->
+    <div class=" h-auto bg-white" id="service">
+        <div class="w-auto h-auto  mx-3 lg:mx-32 text-center">
+            <h1 class="uppercase text-2xl lg:text-4xl pt-20">Services</h1>
+        <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-6 mb-10 text-sm lg:text-lg text-gray-600 ">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
+        <div class=" h-auto grid lg:grid-cols-3 gap-8 ">
+            <div class="bg-gray-100 h-200 rounded-md shadow-lg">
+                <div class="bg-red-300 h-2/5 rounded-t-md bg-cover" style="background-image: url('images/bg_4.jpg');"></div>
+                <div class="mx-8">
+                    <h1 class="text-lg pt-2 lg:pt-4 font-medium">Service 1</h1>
+                <p class="text-left text-sm py-2">Lorem ipsum consectetur adipisicing elit. Eaque aillo harum! Facere, quo eaque commodi reprehender.</p>
+                <ul class="text-left text-sm list-disc  ml-4" >
+                    <li class="py-2">Free Shipping</li>
+                    <li class="py-2">Discount Offers</li>
+                    <li class="py-2">Fast Timing</li>
+                </ul>
+                </div>
+                <button class="bg-blue-600 mt-2 lg:mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn More</button>
+            </div>
+            <div class="bg-gray-100 h-200 rounded-md shadow-lg">
+                <div class="bg-red-300 h-2/5 rounded-t-md bg-cover" style="background-image: url('images/bg_5.jpg');"></div>
+                <div class="mx-8">
+                    <h1 class="text-lg pt-2 lg:pt-4 font-medium">Service 2</h1>
+                <p class="text-left text-sm py-2">Lorem ipsum consectetur adipisicing elit. Eaque aillo harum! Facere, quo eaque commodi reprehender.</p>
+                <ul class="text-left text-sm list-disc  ml-4" >
+                    <li class="py-2">Free Shipping</li>
+                    <li class="py-2">Discount Offers</li>
+                    <li class="py-2">Fast Timing</li>
+                </ul>
+                </div>
+                <button class="bg-blue-600 mt-2 lg:mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn More</button>
+            </div>
+            <div class="bg-gray-100 h-200 rounded-md shadow-lg">
+                <div class="bg-red-300 h-2/5 rounded-t-md bg-cover" style="background-image: url('images/bg_6.jpg');"></div>
+                <div class="mx-8">
+                    <h1 class="text-lg pt-2 lg:pt-4 font-medium">Service 3</h1>
+                <p class="text-left text-sm py-2">Lorem ipsum consectetur adipisicing elit. Eaque aillo harum! Facere, quo eaque commodi reprehender.</p>
+                <ul class="text-left text-sm list-disc  ml-4" >
+                    <li class="py-2">Free Shipping</li>
+                    <li class="py-2">Discount Offers</li>
+                    <li class="py-2">Fast Timing</li>
+                </ul>
+                </div>
+                <button class="bg-blue-600 mt-2 lg:mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Learn More</button>
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+    <!--Services-->
+
+     <!--svg-->
+     <div class="h-auto bg-white">
+        <div>
+         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+        </div>
+        
+     </div>
+     <!--svg-->
+
+     <!--Pricing-->
+     <div class=" h-auto" id="pricing">
+        <div class=" h-full mx-3 lg:mx-32 text-center">
+            <h1 class="uppercase text-2xl lg:text-4xl pt-20">Pricings</h1>
+            <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-6 mb-10 text-sm lg:text-lg text-gray-600 ">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
+        
+            <div class="grid lg:grid-cols-4 gap-4">
+                <div class="h-150 bg-white rounded-md shadow-lg">
+                    <div class="mx-8">
+                        <h1 class="my-10 mb-8 text-2xl font-medium">Standard</h1>
+                    <p class="my-8">
+                        <span><sup class="text-2xl">$</sup></span>
+                        <span class="text-6xl font-medium">25</span>
+                        <span class="text-sm">/mo</span>
+                    </p>
+                    <p class="pb-10 text-gray-500 text-sm">Lorem ipsum dolor sitr adipisicing elit. Exercitationem laborum animi accusamusquim alias libero similique obcaecati.</p>
+                    </div>
+                    <button class="bg-blue-600 mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>
+                </div>
+                <div class="h-150 bg-white rounded-md shadow-lg">
+                    <div class="mx-8">
+                        <h1 class="my-10 mb-8 text-2xl font-medium">Professional</h1>
+                    <p class="my-8">
+                        <span><sup class="text-2xl">$</sup></span>
+                        <span class="text-6xl font-medium">75</span>
+                        <span class="text-sm">/mo</span>
+                    </p>
+                    <p class="pb-10 text-gray-500 text-sm">Lorem ipsum dolor sitr adipisicing elit. Exercitationem laborum animi accusamusquim alias libero similique obcaecati.</p>
+                    </div>
+                    <button class="bg-blue-600 mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>
+                </div>
+                <div class="h-150 bg-white rounded-md shadow-lg">
+                    <div class="absolute  mt-33px ml-52 lg:ml-44 ">
+                        <p class="uppercase bg-blue-400 transform rotate-90 px-3 py-1 tracking-widest text-white text-sm" >Popular</p>
+                    </div>
+                    <div class="mx-8">
+                        <h1 class="my-10 mb-8 text-2xl font-medium">Silver</h1>
+                    <p class="my-8">
+                        <span><sup class="text-2xl">$</sup></span>
+                        <span class="text-6xl font-medium">135</span>
+                        <span class="text-sm">/mo</span>
+                    </p>
+                    <p class="pb-10 text-gray-500 text-sm">Lorem ipsum dolor sitr adipisicing elit. Exercitationem laborum animi accusamusquim alias libero similique obcaecati.</p>
+                    </div>
+                    <button class="bg-blue-600 mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>
+                </div>
+                <div class="h-150 bg-white rounded-md shadow-lg">
+                   
+                    <div class="mx-8">
+                        <h1 class="my-10 mb-8 text-2xl font-medium">Platinum</h1>
+                    <p class="my-8">
+                        <span><sup class="text-2xl">$</sup></span>
+                        <span class="text-6xl font-medium">215</span>
+                        <span class="text-sm">/mo</span>
+                    </p>
+                    <p class="pb-10 text-gray-500 text-sm">Lorem ipsum dolor sitr adipisicing elit. Exercitationem laborum animi accusamusquim alias libero similique obcaecati.</p>
+                    </div>
+                    <button class="bg-blue-600 mt-4 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>
+
+                    
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!--Pricing-->
+
+      <!--svg-->
+    <div class="h-auto ">
+        <div>
+         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#fff" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+        </div>
+        
+     </div>
+     <!--svg-->
+ 
+
+     <!--Faq-->
+     <div class="h-auto bg-white">
+        <div class="mx-3 lg:mx-32 h-auto text-center">
+            <h1 class="uppercase text-2xl lg:text-4xl ">Faqs</h1>
+            <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-6 mb-10 text-sm lg:text-lg text-gray-600 ">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
+            <div class="grid gap-8 lg:grid-cols-2">
+                <div class="h-72 bg-gray-100 shadow-lg rounded-md text-left">
+                    <div class=" mx-8 mt-2 mb-6 lg:my-8">
+                        <h1 class="my-6 text-xl">What is Question1?</h1>
+                        <p class="text-gray-500 font-light text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci aliquid dolore blanditiis. Voluptates, minima eaque sequi facilis, animi ab fugiat corporis quae voluptate aperiai.</p>
+                    </div>
+                    <a href="#" class=" ml-8 text-blue-600">Learn More</a>
+                </div>
+                <div class="h-72 bg-gray-100 shadow-lg rounded-md text-left">
+                    <div class=" mx-8 mt-2 mb-6 lg:my-8">
+                        <h1 class="my-6 text-xl">What is Question2?</h1>
+                        <p class="text-gray-500 font-light text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci aliquid dolore blanditiis. Voluptates, minima eaque sequi facilis, animi ab fugiat corporis quae voluptate aperiai.</p>
+                    </div>
+                    <a href="#" class=" ml-8 text-blue-600">Learn More</a>
+                </div>
+                <div class="h-72 bg-gray-100 shadow-lg rounded-md text-left">
+                    <div class=" mx-8 mt-2 mb-6 lg:my-8">
+                        <h1 class="my-6 text-xl">What is Question3?</h1>
+                        <p class="text-gray-500 font-light text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci aliquid dolore blanditiis. Voluptates, minima eaque sequi facilis, animi ab fugiat corporis quae voluptate aperiai.</p>
+                    </div>
+                    <a href="#" class=" ml-8 text-blue-600">Learn More</a>
+                </div>
+                <div class="h-72 bg-gray-100 shadow-lg rounded-md text-left">
+                    <div class=" mx-8 mt-2 mb-6 lg:my-8">
+                        <h1 class="my-6 text-xl">What is Question4?</h1>
+                        <p class="text-gray-500 font-light text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci aliquid dolore blanditiis. Voluptates, minima eaque sequi facilis, animi ab fugiat corporis quae voluptate aperiai.</p>
+                    </div>
+                    <a href="#" class=" ml-8 text-blue-600">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--Faq-->
+     
+      <!--svg-->
+      <div class="h-auto bg-white">
+        <div>
+         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+        </div>
+        
+     </div>
+     <!--svg-->
+
+     <!--About-->
+     <div class="" id="about">
+        <div class="mx-3 lg:mx-32 text-center">
+            <h1 class="uppercase text-2xl lg:text-4xl pt-20">About us</h1>
+            <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-6 mb-4 lg:mb-10 text-sm lg:text-lg text-gray-600 ">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts. Feel free to send us an email to <a href="#" class="text-blue-600">info@yourdomain.com</a> </p>
+            <div class="grid lg:grid-cols-2 lg:gap-y-8">
+                <div class="h-72 bg-cover bg-center order-1 lg:order-1" style="background-image: url('images/bg_3.jpg');">
+                    
+                </div>
+                <div class="h-72 bg-white text-left mt-4 lg:mt-0 order-2 lg:order-2">
+                    <div class="mt-4 mx-8 mb-4 lg:m-8">
+                        <h1 class="mb-2 lg:mb-4 text-xl lg:text-2xl font-medium">Far far away, behind the world mountains</h1>
+                        <p class="pb-3 lg:pb-8 text-sm lg:text-base">Lorem, ipsum dolor sit orem ipsum dolor, sit amet. Iusto atque exercitationem accusamus consectetur officiis in! Et nesciunt provident saepe iure sed aliqu eligendi architecto ex labore! Architecto deleniti nulla velit quisquam?</p>
+                        <a href="#" class="text-blue-600">Learn More</a>
+                    </div>
+                </div>
+                <div class="h-72  bg-white  text-left mt-8 lg:mt-0 xl\:order-4 lg:order-3">
+                    <div class="mt-4 mx-8 mb-4 lg:m-8 ">
+                        <h1 class="mb-2 lg:mb-4 text-xl lg:text-2xl font-medium">Far far away, behind the world mountains</h1>
+                        <p class="pb-3 lg:pb-8 text-sm lg:text-base">Lorem, ipsum dolor sit orem ipsum dolor, sit amet. Iusto atque exercitationem accusamus consectetur officiis in! Et nesciunt provident saepe iure sed aliqu eligendi architecto ex labore! Architecto deleniti nulla velit quisquam?</p>
+                        <a href="#" class="text-blue-600">Learn More</a>
+                    </div>
+                </div>
+                <div class=" h-72 bg-cover bg-center order-3 lg:order-4" style="background-image: url('images/bg_7.jpg');"></div>
+
+            </div>
+        </div>
+
+     </div>
+     <!--About-->
+
+     <!--svg-->
+    <div class="h-auto ">
+        <div>
+         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#fff" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+        </div>
+        
+     </div>
+     <!--svg-->
+
+     <!--Contact-->
+     <div class="bg-white" id="contact">
+        <div class="h-auto mx-3 lg:mx-32 text-center">
+            <h1 class="uppercase text-2xl lg:text-4xl pt-20">Contact us</h1>
+            <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-6 mb-10 text-sm lg:text-lg text-gray-600 ">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts. Feel free to send us an email to <a href="#" class="text-blue-600">info@yourdomain.com</a> </p>
+            <div class="grid gap-4 lg:grid-cols-2">
+                <div class="bg-gray-200 h-150">
+                    <form action="">
+                        <div class="text-left mx-2 lg:mx-8 mt-4">
+                         
+                            <input type="text" class="block  w-full h-12 my-4 rounded-md pl-4 outline-none" placeholder="Enter your name">
+      
+                            <input type="text" class="block  w-full h-12 my-4 rounded-md pl-4 outline-none" placeholder="Enter your Email">
+                            <textarea name="" id="" cols="30" rows="9" class="w-full block my-4 mb-4 rounded-md pl-4 pt-3 outline-none" placeholder="Write your message."></textarea>
+                        </div>
+                        
+                       <div class="text-left mx-8 ">
+                        <button class="bg-blue-600 py-3 px-6 text-sm text-white rounded-md hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Send Message</button>
+                       </div>
+                    </form>
+                </div>
+                <div class="bg-gray-200 h-150 bg-cover bg-center" style="background-image: url('images/bg_8.jpg');"></div>
+            </div>
+        </div>
+     </div>
+     <!--Contact-->
+
+     <!--svg-->
+     <div class="h-auto bg-white">
+        <div>
+         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
+        </div>
+        
+     </div>
+     <!--svg-->
+
+      <!--Footer Section-->
+<div class="w-full h-auto  mt-4" style="background: #f2f2f2;" id="footer">
+    <div class="w-auto mx-4 lg:mx-32 h-auto grid  lg:grid-cols-4">
+        <div class=" lg:h-72 h-64">
+            <h1 class="uppercase  font-semibold text-base lg:text-xl mt-4">SERVICE</h1>
+            <ul class="lg:mt-4 mt-2 lg:text-base text-sm">
+                <li class="py-2 hover:text-red-500"><a href="#" class=" py-2 lg:pr-52">Help</a></li>
+                <li class="py-2 hover:text-red-500"><a href="#" class=" py-2 lg:pr-40">Contact Us</a></li>
+                <li class="py-2 hover:text-red-500"><a href="support.html" class=" py-2 lg:pr-36">Support</a></li>
+                <li class="py-2 hover:text-red-500"><a href="#" class=" py-2 lg:pr-44">Location</a></li>
+                <li class="py-2 hover:text-red-500"><a href="#" class=" py-2 lg:pr-48">FAQ's</a></li>
+
+            </ul>
+        </div>
+
+     
+        <div class="lg:h-72 h-64">
+            <h1 class="uppercase  font-semibold lg:text-xl mt-4">POLICIES</h1>
+            <ul class="lg:mt-4 mt-2 lg:text-base text-sm">
+                <li class=" py-2 hover:text-red-500"><a href="#">Terms of Use</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Privacy Policy</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Refund Policy</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Billing System</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Agreements</a></li>
+
+            </ul>
+        </div>
+        <div class="lg:h-72 h-64">
+            <h1 class="uppercase  font-semibold lg:text-xl mt-4">Developer Tools</h1>
+            <ul class=" lg:mt-4 mt-2 lg:text-base text-sm">
+                <li class=" py-2 hover:text-red-500"><a href="#">Company Information</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Careers</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Opportunities</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Affiliate Program</a></li>
+                <li class=" py-2 hover:text-red-500"><a href="#">Copyright</a></li>
+
+            </ul>
+        </div>
+        <div class=" lg:h-72 h-64 w-72  lg:w-auto ">
+            <h1 class="uppercase   text-base font-semibold mt-4 lg:mt-16 text-center">Get Updated With US</h1>
+            <input type="text" class=" mt-2 w-full h-10 rounded-sm pl-3" placeholder="Enter your email">
+            <h1 class=" text-center mt-4"><a href="#" class="bg-red-400 text-white py-2 px-6 rounded-lg">Subscribe</a></h1>
+            <p class=" mx-4 mr-5 mt-6 text-xs">Get the most recent updates from our site and be updated yourself</p>
+        </div>
+    </div>
+
+    <div class="text-center  ">
+        <p class="text-xs lg:text-base"><span class="text-blue-600 pr-2">&copy; 2022</span>Sakshyam Testing Website Ltd. All rights reserved. <span><a href="" class="text-blue-600 px-2">&nbsp;Privacy</a></span><span><a href="" class="text-blue-600">&nbsp;Terms of service</a></span></p>
+    </div>
+</div>
+
+<!--Footer Section-->
+
+<script src="index.js"></script>
+</body>
+</html>
