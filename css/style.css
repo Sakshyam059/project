@@ -26,3 +26,6 @@
 .top-100vh{
     top: 100vh;
 }
+.log-main li:hover > .log-now{
+    display: block;
+}
