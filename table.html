@@ -10,39 +10,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body class="" style="background: #f2f2f2;">
+<body class="" style="background: #eeeeee;">
     
     <!--navbar-->
     <nav class="bg-white h-12 lg:h-auto fixed top-0 left-0 right-0 z-10" id="navbar">
         <a class="absolute top-3 left-4 text-lg lg:hidden" onclick="showMenu()">
             <i class="fa-solid fa-bars"></i>
         </a>
-        <a class="hidden absolute top-3 right-4 text-lg lg:hidden" id="cancel" onclick="hideMenu()">
-            <i class="fa-solid fa-xmark"></i>
-        </a>
-        <div class="flex justify-center lg:justify-between mx-3 lg:mx-32">
-            
+       
+        <div class="flex justify-center lg:justify-between mx-3 lg:mx-32">            
             <a class="uppercase tracking-wider mt-3 lg:mt-8 lg:mb-4 text-lg lg:text-xl" href="index.html">Sakshyam</a>
-          
-  
+            
           <div class=" mt-8 mb-4  hidden animate__animated  lg:block" id="menu">
             <ul class=" lg:flex absolute lg:static left-0 mt-4 lg:mt-0 w-screen lg:w-auto bg-white text-center animate__animated animate__slideInDown log-main" id="menu-items">
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="index.html" class="hover:text-red-500 ">Home</a></li>
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="#feature" class="hover:text-red-500 ">Features</a></li>
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="#service" class="hover:text-red-500 ">Services</a></li>
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="#pricing" class="hover:text-red-500 ">Pricing</a></li>
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="#about" class="hover:text-red-500 ">About</a></li>
-              <li class="lg:px-4 py-3 lg:py-0 animate__animated "><a href="#contact" class="hover:text-red-500 ">Contact</a>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="index.html" class="hover:text-red-500 ">Home</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="#feature" class="hover:text-red-500 ">Features</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="#service" class="hover:text-red-500 ">Services</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="#pricing" class="hover:text-red-500 ">Pricing</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="#about" class="hover:text-red-500 ">About</a></li>
+              <li class="lg:px-4 py-3 lg:py-0 "><a href="#contact" class="hover:text-red-500 ">Contact</a>
                 <ul class=" absolute hidden  text-left w-24 text-sm   animate__animated animate__fadeIn log-now" id="">
                     <li class="opacity-0 border-none pl-3 bg-gray-100 border-b border-gray-300 hover:bg-gray-200"><a href="#">blank</a></li>
-                    <li class="py-3 pl-3 bg-gray-100 border-b border-gray-300 hover:bg-gray-200"><a href="table.html" class=" px-1 py-2">Our Team</a></li>    
+                    <li class="py-3 pl-3 bg-gray-600 text-white border-b border-gray-300 hover:bg-gray-400"><a href="table.html" class=" px-1 py-2">Our Team</a></li>    
                 </ul>
               </li>
-              <li class="lg:pl-4 py-3 lg:py-0 animate__animated "><a href="#" class="hover:text-red-500 " onclick="showForm()">Account</a>
+              <li class="lg:pl-4 py-3 lg:py-0"><a href="#" class="hover:text-red-500 " onclick="showForm()">Account</a>
                 <ul class="log-now absolute hidden  text-left w-20 text-sm   animate__animated animate__fadeIn log-now" id="">
                     <li class="opacity-0 border-none pl-3 bg-gray-100 border-b border-gray-300 hover:bg-gray-200"><a href="#">blank</a></li>
-                    <li class="py-3 pl-3 bg-gray-100 border-b border-gray-300 hover:bg-gray-200"><a href="#" class="px-1 py-2"  onclick="showForm()">Sign In</a></li>
-                    <li class="py-3 pl-3 bg-gray-100 border-b border-gray-300 hover:bg-gray-200"><a href="#" class="px-1 py-2" >Sign Up</a></li>
+                    <li class="py-3 pl-3 bg-gray-600 text-white border-b border-gray-300 hover:bg-gray-400"><a href="#" class="px-1 py-2"  onclick="showForm()">Sign In</a></li>
+                    <li class="py-3 pl-3 bg-gray-600 text-white border-b border-gray-300 hover:bg-gray-400"><a href="#" class="px-1 py-2" >Sign Up</a></li>
                 </ul>  
               </li>
 
@@ -58,7 +54,7 @@
      <div class="hidden fixed  top-12 lg:top-16  h-screen w-full bg-gray-200  bg-opacity-70 backdrop-filter backdrop-blur-md z-10 " id="formmain">
         <div class="mt-10 rounded-lg w-auto lg:w-1/4 mx-3 lg:mx-auto h-auto bg-white animate__animated animate__fadeIn" id="form">
             <div class="bg-blue-400 h-full w-full  rounded-lg lg:rounded-r-lg">
-                <form action="" class="h-full w-full bg-white rounded-lg lg:rounded-r-lg">
+                <form action="" onsubmit="validation()" class="h-full w-full bg-white rounded-lg lg:rounded-r-lg">
                     <h1 class="text-center text-2xl lg:text-3xl font-bold pt-4">Log In</h1>
                     <h2 class="text-center pt-8 lg:pt-14 font-semibold">Welcome to Sakshyam</h2>
                     <div class="mx-4 mt-8">
@@ -70,7 +66,7 @@
                         <h2 class="text-xs text-right mr-4 mt-2"><a href="" class="text-blue-600">Forgot Password?</a></h2>
                     </div>
                     <div class="text-center mt-4">
-                        <a onclick="login()" class="bg-blue-600 px-8 py-2 mx-auto rounded-lg text-white transition-all ease-in-out hover:bg-yellow-400 hover:text-black cursor-pointer">Log In</a>
+                        <a href="" class="bg-blue-600 px-8 py-2 mx-auto rounded-lg text-white transition-all ease-in-out hover:bg-yellow-400 hover:text-black cursor-pointer">Log In</a>
                     </div>
 
                     <p class="text-center mt-4 text-xs text-gray-400">OR</p>
@@ -91,25 +87,31 @@
     <!--form-->
 
     <!--Container-->
-    <div class="bg-blue-200  absolute top-0 left-0 right-0 bottom-0 bg-center bg-cover pl-3 lg:pl-32 text-white " style="background-image: url('images/bg_10.jpg');">
-       
-           
-        <h1 class=" pt-32 lg:pt-44 pb-6 text-4xl mx-3 lg:mx-0 lg:text-6xl  font-bold">Meet our Teams</h1>
-        <p class="w-auto mx-3 lg:mx-0 lg:w-1/3 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing nde maiores temporibus nemo eius, aspernatur error illum, veritatis aperiam dolores illo similique quas!</p>
-        <button class="ml-4 lg:ml-0 bg-blue-500 text-white px-6 py-3 rounded-md text-lg hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>  
-        <svg class="absolute left-0 bottom-0 lg:-bottom-10 " xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
-  </div>
-    <!--Container-->
+    <div class="bg-gray-50 ">
+        <div class="  mx-3 lg:mx-32  grid lg:grid-cols-2 ">
+             <div class=" lg:mt-0  order-2 lg:order-1"> 
+                <h1 class="pt-0 lg:pt-44 text-3xl  mx-6 lg:mx-7 lg:text-6xl  font-bold">Meet our Teams</h1>
+                <p class="m-6 lg:m-6 w-auto lg:w-3/4 text-sm">Lorem ipsum dolor adipisicing elit. Reprehenderit officia totam simo, temporibus dolor adipisicing sit corrupti sunt non dolore dolor adipisicing corporis, beatae atque possimus quibusdam!</p>
+                <button class="bg-blue-500 text-white px-6 mx-7 py-2 lg:py-3 rounded-md text-lg hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Get Started</button>  
+             </div>
+            <div class=" h-48 lg:h-auto mt-12   order-1 lg:order-2" >
+                <div class="bg-contain bg-center  bg-no-repeat h-full  mt-0 lg:mt-16 " style="background-image: url('images/bg_12.png');"></div>
+            </div>
+        </div>
+        <div class=" h-64 w-full bg-no-repeat bg-cover bg-center" style="background-image: url('images/wave.svg');"></div>
+    
+     </div>
+     <!--Container-->
 
-    <!--Feature-->
-    <div class="relative top-100vh h-auto mx-3 lg:mx-32 text-center" style="background: #f2f2f2;" id="feature">
-        <h1 class="uppercase text-2xl lg:text-4xl pt-20">Our Passionate Team</h1>
+    <!--Team-->
+    <div class=" h-auto mx-3 lg:mx-32 text-center" style="background: #eeeeee;" id="feature">
+        <h1 class="uppercase text-2xl lg:text-4xl pt-4 lg:pt-20">Our Passionate Team</h1>
         <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-10 text-sm lg:text-lg text-gray-600">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
         <div class=" grid gap-8 lg:grid-cols-3 ">
             <div class="bg-white rounded-lg shadow-lg  h-110">
                
-                <div class="h-2/6 mx-12">
-                <i class="fa-solid fa-thumbs-up  text-8xl mt-6 text-gray-500"></i>
+                <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/hacker.png');">
+               
                 </div>
 
                 <div class="mx-12">
@@ -122,9 +124,8 @@
             </div>
             <div class="bg-white rounded-lg shadow-lg h-110">
 
-                <div class=" h-2/6 mx-12">
-                    
-                    <i class="fa-solid fa-bolt-lightning text-8xl  mt-6 text-gray-500"></i>
+                <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/avatar.png');">
+               
                 </div>
 
                 <div class="mx-12">
@@ -137,9 +138,8 @@
             </div>
             <div class="bg-white rounded-lg shadow-lg h-110">
 
-                <div class="h-2/6 mx-12">
-                    
-                <i class="fa-solid fa-user  text-8xl mt-6 text-gray-500"></i>
+                <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/man.png');">
+               
                 </div>
 
                 <div class="mx-12">
@@ -158,19 +158,15 @@
     <!--Feature-->
 
      <!--svg-->
-     <div class="relative top-100vh h-auto ">
-        <div>
-         <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#fff" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
-        </div>
-        
-     </div>
+     <div class=" h-52 w-full bg-no-repeat bg-cover bg-center" style="background-image: url('images/whitewave.svg');"></div>
+    
      <!--svg-->
 
     <!--Table-->
-    <div class="bg-white relative top-100vh h-auto  text-center" id="feature">
+    <div class="bg-white  h-auto  text-center" id="feature">
        <div class="mx-3 lg:mx-0">
-        <h1 class="uppercase text-2xl lg:text-4xl pt-20">Our Support Members</h1>
-        <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-10 text-sm lg:text-lg text-gray-600">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
+        <h1 class="uppercase text-2xl lg:text-4xl pt-4 lg:pt-20">Our Support Members</h1>
+        <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-10 text-sm lg:text-base text-gray-600">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
        
        </div>
        
@@ -251,15 +247,10 @@
     </div>
     <!--Table-->
  <!--svg-->
- <div class="relative top-100vh h-auto bg-white">
-    <div>
-     <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="40 80 1024 180"><path fill="#f2f2f2" fill-opacity="1" d="M0,224L1440,96L1440,320L0,320Z"></path></svg>
-    </div>
-    
- </div>
+ <div class="bg-white h-52 w-full bg-no-repeat bg-cover bg-center" style="background-image: url('images/wave.svg');"></div>
  <!--svg-->
     <!--Footer Section-->
-<div class="relative top-100vh w-full h-auto  mt-4" style="background: #f2f2f2;" id="footer">
+<div class=" w-full h-auto  -mt-1 lg:mt-0" style="background: #eeeeee;" id="footer">
     <div class="w-auto mx-3 lg:mx-32 h-auto grid  lg:grid-cols-4">
         <div class=" lg:h-72 h-64">
             <h1 class="uppercase  font-semibold text-base lg:text-xl mt-4">SERVICE</h1>
@@ -311,6 +302,6 @@
 
 <!--Footer Section-->
 
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

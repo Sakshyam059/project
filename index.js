@@ -1,12 +1,3 @@
-function showMenu(){
-    document.getElementById('menu').style.display='block';
-    document.getElementById('cancel').style.display='block';
-
-}
-function hideMenu(){
-    document.getElementById('menu').style.display='none';
-    document.getElementById('cancel').style.display='none';
-}
 function showForm(){
     document.getElementById('formmain').style.display='block';
   
@@ -27,7 +18,6 @@ document.addEventListener('mouseup', function(e){
 });*/
 document.addEventListener('mouseup', function(e){
     var container = document.getElementById('form');
-
     if(!container.contains(e.target)){
         document.getElementById('formmain').style.display='none';
     document.getElementById('cancel').style.display='none';
@@ -37,25 +27,37 @@ document.addEventListener('mouseup', function(e){
 
 
 
-function login(){
-    var pw = document.getElementById("password").value;  
-  //check empty password field  
-  if(pw == "") {  
-     document.getElementById("notify").innerHTML = "Fill the password please!";  
-     return false;  
-  }  
-   
- //minimum password length validation  
-  if(pw.length < 8) {  
-     document.getElementById("notify").innerHTML = "Password length must be atleast 8 characters";  
-     return false;  
-  }  
-  
-//maximum length of password validation  
-  if(pw.length > 15) {  
-     document.getElementById("notify").innerHTML = "Password length must not exceed 15 characters";  
-     return false;  
-  } else {  
-     alert("Password is correct");  
-  } 
+function validation(){
+    let username=document.getElementById('username').value;
+    let password=document.getElementById('password').value;
+
+    if(username==''||password==''){
+        alert('Both fields are required.');
+        return false;
+    }
+    if(username==password){
+        alert('Both fields should not be same.');
+        return false;
+    }
 }
+
+function Menu(){
+    let menu=document.getElementById('menu').classList;
+    if(menu.contains('hidden')){
+        menu.remove('hidden');
+    }
+    else{
+        menu.add('hidden');
+    }
+}
+/*
+let signup=document.getElementById('signupbtn');
+signup.addEventListener('click',function checkpassword(){
+    var npassword=document.getElementById('npassword').value;
+    var cpassword=document.getElementById('cpassword').value;
+    if(cpassword!=npassword){
+        document.getElementById('notify').innerHTML='Password do not match';
+    }
+  
+
+})*/

@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .mt-33px{
     margin-top: 33px;
@@ -29,3 +32,8 @@
 .log-main li:hover > .log-now{
     display: block;
 }
+
+.animate__animatedanimate__slideInDown {
+    --animtion-delay: 1s;
+    --animate-duration: 4s;
+  }
