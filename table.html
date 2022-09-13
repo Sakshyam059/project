@@ -21,7 +21,7 @@
         <div class="flex justify-center lg:justify-between mx-3 lg:mx-32">            
             <a class="uppercase tracking-wider mt-3 lg:mt-8 lg:mb-4 text-lg lg:text-xl" href="index.html">Sakshyam</a>
             
-          <div class=" mt-8 mb-4  hidden animate__animated  lg:block" id="menu">
+          <div class=" mt-8  hidden animate__animated  lg:block" id="menu">
             <ul class=" lg:flex absolute lg:static left-0 mt-4 lg:mt-0 w-screen lg:w-auto bg-white text-center animate__animated animate__slideInDown log-main" id="menu-items">
               <li class="lg:px-4 py-3 lg:py-0 "><a href="index.html" class="hover:text-red-500 ">Home</a></li>
               <li class="lg:px-4 py-3 lg:py-0 "><a href="#feature" class="hover:text-red-500 ">Features</a></li>
@@ -54,19 +54,19 @@
      <div class="hidden fixed  top-12 lg:top-16  h-screen w-full bg-gray-200  bg-opacity-70 backdrop-filter backdrop-blur-md z-10 " id="formmain">
         <div class="mt-10 rounded-lg w-auto lg:w-1/4 mx-3 lg:mx-auto h-auto bg-white animate__animated animate__fadeIn" id="form">
             <div class="bg-blue-400 h-full w-full  rounded-lg lg:rounded-r-lg">
-                <form action="" onsubmit="validation()" class="h-full w-full bg-white rounded-lg lg:rounded-r-lg">
+                <form action="" onsubmit="return validation()" class="h-full w-full bg-white rounded-lg lg:rounded-r-lg">
                     <h1 class="text-center text-2xl lg:text-3xl font-bold pt-4">Log In</h1>
-                    <h2 class="text-center pt-8 lg:pt-14 font-semibold">Welcome to Sakshyam</h2>
+                    <h2 class="text-center pt-8  font-semibold">Welcome to Sakshyam</h2>
                     <div class="mx-4 mt-8">
                         <label for="" class="text-sm">Username or Email</label>
-                        <input type="text" class="block border-b w-full  mb-2 h-6 pl-1 outline-none" id="username">
+                        <input type="text" class="block border-b w-full  my-2 h-6 pl-1 outline-none" id="username">
                         <label for="" class="text-sm" >Password</label>
-                        <input type="password" class="block border-b w-full  h-6 pl-1 outline-none" id="password">
+                        <input type="password" class="block border-b w-full my-2  h-6 pl-1 outline-none" id="password">
                         <p class="hidden text-xs mt-2 text-red-500" id="password-notify">Password must contain 8 letters</p>
-                        <h2 class="text-xs text-right mr-4 mt-2"><a href="" class="text-blue-600">Forgot Password?</a></h2>
+                        <h2 class="text-xs text-right mr-4 my-2"><a href="" class="text-blue-600">Forgot Password?</a></h2>
                     </div>
-                    <div class="text-center mt-4">
-                        <a href="" class="bg-blue-600 px-8 py-2 mx-auto rounded-lg text-white transition-all ease-in-out hover:bg-yellow-400 hover:text-black cursor-pointer">Log In</a>
+                    <div class="text-center mt-6">
+                        <input type="submit" value="Log In" class="bg-blue-600 px-8 py-2 mx-auto rounded-lg text-white transition-all ease-in-out hover:bg-yellow-400 hover:text-black cursor-pointer">
                     </div>
 
                     <p class="text-center mt-4 text-xs text-gray-400">OR</p>
@@ -108,7 +108,7 @@
         <h1 class="uppercase text-2xl lg:text-4xl pt-4 lg:pt-20">Our Passionate Team</h1>
         <p class="mx-auto w-full lg:w-1/2 my-4 lg:my-10 text-sm lg:text-lg text-gray-600">Far far away, behind  the word mountains, far from the countries Nepal and USA, ther live the blind texts.</p>
         <div class=" grid gap-8 lg:grid-cols-3 ">
-            <div class="bg-white rounded-lg shadow-lg  h-110">
+            <div class="bg-white rounded-lg shadow-lg  h-110 transform hover:scale-105 transition duration-500 ease-in-out">
                
                 <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/hacker.png');">
                
@@ -119,10 +119,10 @@
                 <p class="my-6 lg:my-8 text-sm lg:text-base text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
                 </div>
 
-                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</button>
+                <a href="mailto:sakshyamgurau@gmail.com" class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</a>
                 
             </div>
-            <div class="bg-white rounded-lg shadow-lg h-110">
+            <div class="bg-white rounded-lg shadow-lg h-110 transform hover:scale-105 transition duration-500 ease-in-out">
 
                 <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/avatar.png');">
                
@@ -133,10 +133,10 @@
                 <p class="my-6 lg:my-8 text-sm lg:text-base text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
                 </div>
 
-                <button class="bg-blue-600 px-6 py-2 rounded-md  text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</button>
+                <a href="mailto:roshanshah@gmail.com" class="bg-blue-600 px-6 py-2 rounded-md  text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</a>
                 
             </div>
-            <div class="bg-white rounded-lg shadow-lg h-110">
+            <div class="bg-white rounded-lg shadow-lg h-110 transform hover:scale-105 transition duration-500 ease-in-out">
 
                 <div class="h-2/6 mx-12 mt-3 bg-contain bg-no-repeat bg-center " style="background-image: url('images/man.png');">
                
@@ -147,7 +147,7 @@
                 <p class="my-6 lg:my-8 text-sm lg:text-base text-gray-500">Far far away, behind  the word mountains, far from the countries Nepal, Australia and USA, ther live the blind texts.</p>
                 </div>
 
-                <button class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</button>
+                <a href="mailto:anilchaudhary@gmail.com" class="bg-blue-600 px-6 py-2 rounded-md text-white hover:bg-yellow-400 hover:text-black transition-all ease-in-out">Contact now</a>
                 
             </div>
 
@@ -172,71 +172,71 @@
        
         <div class=" mx-3 lg:mx-32  text-xs lg:text-xl">
             <table class=" border border-black w-full" style="background-color: #f2f2f2;">
-                <tr class="border border-black">
+                <tr class="border border-black bg-gray-700 text-white cursor-pointer" >
                     <th class="py-4">S.N</th>
                     <th>Name</th>
                     <th>Phone no.</th>
                     <th class="hidden lg:block pt-4">Email</th>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer" >
                     <td class="py-4">1</td>
                     <td>Sakshyam Gurau</td>
                     <td>9807989890</td>
-                    <td class="hidden lg:block pt-4">Sakshyam123@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Sakshyam123@email.com" class="">Sakshyam123@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer" >
                     <td class="py-4">2</td>
                     <td>Roshan Shah</td>
                     <td>9807123290</td>
-                    <td class="hidden lg:block pt-4">Roshan53@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Roshan53@email.com" class="">Roshan53@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">3</td>
                     <td>Anil Chaudhary</td>
                     <td>9828128120</td>
-                    <td class="hidden lg:block pt-4">Anil323@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Anil323@email.com" class="">Anil323@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">4</td>
                     <td>Nissan Thapa</td>
                     <td>9823232224</td>
-                    <td class="hidden lg:block pt-4">Nishan435@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Nishan435@email.com" class="">Nishan435@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">5</td>
                     <td>Arjun Shrestha</td>
                     <td>9812233324</td>
-                    <td class="hidden lg:block pt-4">Arjun342@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Arjun342@email.com" class="">Arjun342@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">6</td>
                     <td>Simangka Upreti</td>
                     <td>9884289443</td>
-                    <td class="hidden lg:block pt-4">Simangka233@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Simangka233@email.com" class="">Simangka233@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">7</td>
                     <td>Manish Pokharel</td>
                     <td>9802222321</td>
-                    <td class="hidden lg:block pt-4">Manish13@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Manish13@email.com" class="">Manish13@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">8</td>
                     <td>Sushant Baral</td>
                     <td>9823423324</td>
-                    <td class="hidden lg:block pt-4">Sushant18@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Sushant18@email.com" class="">Sushant18@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">9</td>
                     <td>Subash Baral</td>
                     <td>9807989890</td>
-                    <td class="hidden lg:block pt-4">Grizzle123@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Grizzle123@email.com" class="">Grizzle123@email.com</a></td>
                 </tr>
-                <tr class="border border-black">
+                <tr class="border border-black hover:bg-gray-500 hover:text-white cursor-pointer">
                     <td class="py-4">10</td>
                     <td>Bishal Lamsal</td>
                     <td>9832943822</td>
-                    <td class="hidden lg:block pt-4">Bishal32@email.com</td>
+                    <td class="hidden lg:block pt-4"><a href="mailto:Bishal32@email.com" class="">Bishal32@email.com</a></td>
                 </tr>
             </table>
             
